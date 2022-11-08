@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<genotypes>
+
+  <genotype Name="Catgirl" MutationPoints="6" StatPoints="44" AllowedMutationCategories="*" CyberneticsLicensePoints="2" RandomWeight="10" DisplayName="Catgirls" Subtypes="Nyan" Class="" Tile="creatures/kf_preview.png" DetailColor="r" BodyObject="PlayableCatgirl" BaseHPGain="1-4" BaseSPGain="60" BaseMPGain="2" IsTrueKin="false" IsMutant="true">
+    <stat Name="Strength" Minimum="8" Maximum="22" ChargenDescription="Your {{W|Strength}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
+    <stat Name="Agility" Minimum="12" Maximum="24" ChargenDescription="Your {{W|Agility}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
+    <stat Name="Toughness" Minimum="10" Maximum="24" ChargenDescription="Your {{W|Toughness}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
+    <stat Name="Intelligence" Minimum="10" Maximum="24" ChargenDescription="Your {{W|Intelligence}} score determines your number of skill points and your ability to examine artifacts."/>
+    <stat Name="Willpower" Minimum="8" Maximum="22" ChargenDescription="Your {{W|Willpower}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate."/>
+    <stat Name="Ego" Minimum="12" Maximum="24" ChargenDescription="Your {{W|Ego}} score determines the potency of your ability to haggle with merchants, and your ability to dominate the wills of other living creatures."/>
+    <skills>
+      <skill Name="Tactics_Run" />
+      <skill Name="Survival_Camp" />
+	  <skill Name="Acrobatics_Jump" />
+    </skills>
+	<reputations>
+		<reputation With="Cats" Value="600" />
+		<reputation With="Dogs" Value="-600" />
+	</reputations>
+    <extrainfo>Descended from Beloved Pets
+{{c|&#249;}} Gets starter cybernetics, but no more.
+{{c|&#249;}} Hated by the {{C|the Putus Templar}}</extrainfo>
+  </genotype>
+  
+  <genotype Name="Nyanpire" MutationPoints="0" StatPoints="38" AllowedMutationCategories="*" CyberneticsLicensePoints="0" RandomWeight="10" DisplayName="Nyanpire" Subtypes="Pire" Class="" Tile="creatures/kf_nyanpire.png" DetailColor="R" BodyObject="PlayableNyanpire" BaseHPGain="2-5" BaseSPGain="50" BaseMPGain="2" IsTrueKin="true" IsMutant="true">
+    <stat Name="Strength" Minimum="10" Maximum="24" ChargenDescription="Your {{W|Strength}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
+    <stat Name="Agility" Minimum="14" Maximum="26" ChargenDescription="Your {{W|Agility}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
+    <stat Name="Toughness" Minimum="12" Maximum="26" ChargenDescription="Your {{W|Toughness}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
+    <stat Name="Intelligence" Minimum="12" Maximum="26" ChargenDescription="Your {{W|Intelligence}} score determines your number of skill points and your ability to examine artifacts."/>
+    <stat Name="Willpower" Minimum="10" Maximum="24" ChargenDescription="Your {{W|Willpower}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate."/>
+    <stat Name="Ego" Minimum="14" Maximum="26" ChargenDescription="Your {{W|Ego}} score determines the potency of your ability to haggle with merchants, and your ability to dominate the wills of other living creatures."/>
+    <skills>
+      <skill Name="Tactics_Run" />
+      <skill Name="Survival_Camp" />
+	  <skill Name="Acrobatics_Jump" />
+    </skills>
+	<reputations>
+		<reputation With="Cats" Value="600" />
+		<reputation With="Dogs" Value="-600" />
+	</reputations>
+    <extrainfo>Nyacturnal Predator!
+{{c|&#249;}} Hates the daylight (and vegetables! Blyah!!)
+{{c|&#249;}} Hated by the {{C|the Putus Templar}}</extrainfo>
+  </genotype>  
+</genotypes>

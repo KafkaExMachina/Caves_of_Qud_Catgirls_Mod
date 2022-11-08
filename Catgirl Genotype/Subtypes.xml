@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<subtypes>
+
+  <class ID="Nyan" ChargenTitle="choose caste" SingularTitle="Nyan" StatBoxDisplay="true">
+  
+    <subtype Name="Scrappy Kitty" Code="cat1" Gear="StartingGear_Scrappy" Tile="creatures/kf_scrappy_kitty.png" DetailColor="B">
+        <stat Name="Strength" Bonus="1" />
+        <stat Name="Toughness" Bonus="1" />
+        <skills>
+          <skill Name="LongBlades" />
+          <skill Name="Shield" />
+          <skill Name="Shield_Slam" />  
+          <skill Name="Endurance" />
+        </skills>
+      <extrainfo>Starts with a full set of starter armor</extrainfo>
+    </subtype>
+
+    <subtype Name="Gun Kitten" Code="cat2" Gear="StartingGear_GunKitten" Tile="creatures/kf_gun_kitten.png" DetailColor="r">
+        <stat Name="Agility" Bonus="2" />
+        <skills>
+          <skill Name="Acrobatics" />
+          <skill Name="Pistol" />
+		  <skill Name="Pistol_FastestGun" />
+        </skills>
+    </subtype>
+
+    <subtype Name="Claimer of Laps" Code="cat3" Gear="StartingGear_Laps" Tile="creatures/kf_claimer_of_laps.png" DetailColor="m">
+      <stat Name="Ego" Bonus="2" />
+      <skills>
+        <skill Name="Persuasion" />
+        <skill Name="Persuasion_Intimidate" />
+		<skill Name="Persuasion_Proselytize" />
+      </skills>
+    </subtype>
+	
+    <subtype Name="Swordskitten" Code="cat4" Gear="StartingGear_Swordskitten" Tile="creatures/kf_swordskitten.png" DetailColor="B">
+        <stat Name="Strength" Bonus="1" />
+        <stat Name="Agility" Bonus="1" />
+        <skills>
+          <skill Name="LongBlades" />
+          <skill Name="LongBladesDuelingStance" />
+		  <skill Name="LongBladesImprovedDuelistStance" />
+          <skill Name="Acrobatics" />
+        </skills>
+    </subtype>
+	
+
+    <!--<subtype Name="Destroyer of Yarn" Code="cat4" Gear="StartingGear_Yarn" Tile="creatures/kf_catgirl_carthax.png" DetailColor="g">
+      <stat Name="Agility" Bonus="1" />
+      <stat Name="Toughness" Bonus="1" />
+      <skills>
+        <skill Name="Acrobatics" />
+        <skill Name="Acrobatics_Dodge" />
+        <skill Name="Endurance_Longstrider" />
+        <skill Name="CookingAndGathering" />
+      </skills>
+    </subtype>-->
+
+   <subtype Name="Alley Cat" Code="cat5" Gear="StartingGear_AlleyCat" Tile="creatures/kf_alley_cat.png" DetailColor="w">
+      <stat Name="Agility" Bonus="1" />
+      <stat Name="Strength" Bonus="1" />
+      <skills>
+        <skill Name="Tinkering_Scavenger" />
+        <skill Name="Survival" />
+        <skill Name="Rifles" />
+        <skill Name="Discipline_FastingWay" />
+      </skills>
+      <extrainfo>Starts with a solid bow, random junk and artifacts</extrainfo>
+    </subtype>
+
+    <subtype Name="Wiregnawer" Code="cat6" Gear="StartingGear_BaetylKitten" Tile="creatures/kf_cougar.png" DetailColor="b">
+      <stat Name="Intelligence" Bonus="2" />
+      <skills>
+        <skill Name="Tinkering" />
+        <skill Name="Tinkering_Tinker1" />
+        <skill Name="Tinkering_Disassemble" />
+        <skill Name="Tinkering_ReverseEngineer" />
+      </skills>
+      <extrainfo>Starts with random datadisks and scrap</extrainfo>
+    </subtype>
+
+    <subtype Name="Frisbee Kitten" Code="cat7" Gear="StartingGear_Frisbee" Tile="creatures/kf_frisbee_kitten.png" DetailColor="o">
+      <stat Name="Agility" Bonus="2" />
+      <skills>
+        <skill Name="Tactics" />
+        <skill Name="Tactics_Throwing" />
+        <skill Name="Tinkering_Disassemble" />
+		<skill Name="Tinkering_Repair" />
+      </skills>
+      <extrainfo>Starts with an {{rainbow|ultimate frisbee!}}</extrainfo>
+    </subtype>
+	
+	<subtype Name="Panther" Code="cat8" Gear="StartingGear_Cougar" Tile="creatures/kf_cougar_2.png" DetailColor="K">
+      <stat Name="Agility" Bonus="2" />
+      <skills>
+          <skill Name="CookingAndGathering_Butchery" />
+          <skill Name="Rifles" />
+          <skill Name="Rifle_SureFire" />
+          <skill Name="Survival" />
+      </skills>
+    </subtype>
+  </class>
+  
+  <class ID="Pire" ChargenTitle="creature of the night!" SingularTitle="Nyanpire" StatBoxDisplay="true">  
+  
+	<subtype Name="Nyanpire" Code="cat9" Gear="StartingGear_Nyanpire" Tile="creatures/kf_nyanpire.png" DetailColor="R">
+      <stat Name="Agility" Bonus="2" />
+	  <stat Name="Ego" Bonus="2" />
+	  <stat Name="Willpower" Bonus="-2" />
+	  <stat Name="HeatResistance" Bonus="-25" />
+      <skills>
+          <skill Name="Persuasion" />
+          <skill Name="Discipline_FastingWay" />
+          <skill Name="ShortBlades" />
+		  <skill Name="ShortBlades_Bloodletter" />
+		  <skill Name="ShortBlades_Jab" />
+      </skills>
+	  <extrainfo>Creature of the night!</extrainfo>
+    </subtype>
+	
+  </class>	
+</subtypes>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+
+  <population Name="StartingGear_CatgirlCommon">
+    <group Name="Items" Style="pickeach">
+	  <table Name="StartingGear_Common" />
+	  <object Blueprint="KF_TailRibbon" Number="1" />
+    </group>
+  </population>
+  
+  <population Name="StartingGear_GunKitten">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_CatgirlCommon" />
+	  
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+      <object Blueprint="Crusty Loaf" Number="2-3" />
+	  <object Blueprint="Wide-brimmed Hat" Number="1" />
+      <object Blueprint="Woven Tunic" Number="1" />
+      <object Blueprint="Worn Burnoose" Number="1" />
+	  <object Blueprint="Sandals" Number="1" />
+      <object Blueprint="KF_MagnumRevolver" Number="1" />
+      <object Blueprint="Lead Slug" Number="250-300" />
+	  <object Blueprint="Bandage" Number="2-3" />
+      <object Blueprint="Witchwood Bark" Number="1" />
+	  
+      <table Name="Injectors" Number="1" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_Scrappy">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Common" />
+
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+      <object Blueprint="HalfFullCanteen" Number="1" />
+      <object Blueprint="Goat Jerky" Number="8-12" />
+      <object Blueprint="Leather Armor" Number="1" />
+      <object Blueprint="Steel Buckler" Number="1" />
+      <object Blueprint="Long Sword" Number="1" />
+	  <object Blueprint="Leather Cap" Number="1" />
+      <object Blueprint="Leather Boots" Number="1" />
+	  <object Blueprint="Leather Gloves" Number="1" />
+	  <object Blueprint="Worn Burnoose" Number="1" />
+	  <object Blueprint="KF_IronTailRibbon" Number="1" />
+	  <object Blueprint="Bandage" Number="1-2" />
+      <object Blueprint="Witchwood Bark" Number="2-3" />
+    </group>
+  </population>
+  
+  <population Name="StartingGear_Swordskitten">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Common" />
+
+      <object Blueprint="HalfFullCanteen" Number="1" />
+      <object Blueprint="Goat Jerky" Number="8-12" />
+      <object Blueprint="Woven Tunic" Number="1" />
+      <object Blueprint="Steel Long Sword" Number="1" />
+	  <object Blueprint="KF_SteelTailRibbon" Number="1" />
+	  <object Blueprint="Wide-brimmed Hat" Number="1" />
+      <object Blueprint="Leather Gloves" Number="1" />
+	  <object Blueprint="Sandals" Number="1" />
+	  <object Blueprint="Bandage" Number="1-2" />
+      <object Blueprint="Witchwood Bark" Number="2-3" />
+	  <object Blueprint="Artifact 1" Number="0-1" />
+    </group>
+  </population>  
+
+  <population Name="StartingGear_Laps">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Common" />
+
+	  <object Blueprint="HalfFullCanteen" Number="1" />
+	  <object Blueprint="Phial" Number="1" />
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+      <object Blueprint="Woven Tunic" Number="1" />
+      <object Blueprint="Crusty Loaf" Number="2-5" />
+	  <object Blueprint="KF_TailRibbon3" Number="1" />
+      <object Blueprint="Sandals" Number="1" />
+      <table Name="Artifact 1" Number="1-2" />
+      <object Blueprint="SalveTonic" Number="1" />
+      <table Name="Injectors" Number="0-1" />
+      <table Name="Trinkets 1" Number="1-2" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_Yarn">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_CatgirlCommon" />
+
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+      <object Blueprint="Woven Tunic" Number="1" />
+      <object Blueprint="Witchwood Bark" Number="2-6" />
+      <object Blueprint="Sandals" Number="1" />
+      <table Name="Cells" Number="1-3" />
+	  <table Name="Artifact 1" Number="1-2" />
+	  <table Name="Artifact 1R" Number="1" />
+      <object Blueprint="SalveTonic" Number="1" />
+      <table Name="Injectors" Number="1" />
+      <table Name="Scrap 1" Number="1-4" />
+      <table Name="Trinkets 1" Number="1-2" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_AlleyCat">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_CatgirlCommon" />
+
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+      <object Blueprint="Basic Toolkit" Number="1" />
+      <object Blueprint="HalfFullCanteen" Number="1" />
+      <object Blueprint="Compound Bow" Number="1" />
+	  <object Blueprint="Wooden Arrow" Number="50-75" />
+	  <object Blueprint="Steel Arrow" Number="20-30" />
+	  <object Blueprint="Carbide Arrow" Number="1-8" />
+      <object Blueprint="Boomrose Arrow" Number="8-16" />
+      <object Blueprint="Woven Tunic" Number="1" />
+      <object Blueprint="Canned Have-It-All" Number="2-5" />
+      <object Blueprint="Leather Moccasins" Number="1" />
+	  <object Blueprint="Bandage" Number="1-2" />
+      <table Name="Junk 1" Number="1-3" />
+      <table Name="Artifact 1" Number="0-2" />
+      <table Name="Scrap 1" Number="1-4" />
+	  <table Name="Trinkets 1" Number="1" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_BaetylKitten">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_CatgirlCommon" />
+
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+      <object Blueprint="Basic Toolkit" Number="1" />
+      <object Blueprint="HalfFullCanteen" Number="1" />
+      <object Blueprint="Cloth Overalls" Number="1" />
+      <object Blueprint="Sandals" Number="1" />
+      <object Blueprint="Canned Have-It-All" Number="1-4" />
+      <object Blueprint="DataDisk" Number="1-2" />
+	  <table Name="Artifact 1" Number="1-3" />
+	  <table Name="Artifact 1R" Number="1" />
+      <table Name="Artifact 2" Number="0-1" />
+	  <table Name="Scrap 1" Number="5-6" />
+      <table Name="Cells" Number="1-3" />
+	  <table Name="Trinkets 1" Number="0-3" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_Frisbee">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_CatgirlCommon" />
+
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+      <object Blueprint="Woven Tunic" Number="1" />
+      <object Blueprint="Leather Boots" Number="1" />
+      <object Blueprint="Basic Toolkit" Number="1" />
+	  <object Blueprint="Solar Cell" Number="1" />
+	  <object Blueprint="Fidget Cell" Number="1" />
+      <table Name="Cells" Number="0-2" />
+      <object Blueprint="Witchwood Bark" Number="1-2" />
+	  <object Blueprint="Bandage" Number="1-2" />
+      <object Blueprint="KF_Frisbee" Number="1" />
+	  <table Name="Trinkets" Number="0-1" />
+    </group>
+  </population>
+  
+  <population Name="StartingGear_Cougar">
+    <group Style="pickeach">
+      <table Name="StartingGear_CatgirlCommon" />
+
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+      <object Blueprint="KF_CougarRifle" Number="1" />
+      <object Blueprint="Lead Slug" Number="56-106" />
+      <object Blueprint="Steel Kukri" Number="1" />
+      <object Blueprint="Woven Tunic" Number="1" />
+      <object Blueprint="Leather Boots" Number="1" />
+      <object Blueprint="Bear Jerky" Number="4-6" />
+      <object Blueprint="Witchwood Bark" Number="3-4" />
+    </group>
+  </population>  
+  
+  <population Name="StartingGear_Nyanpire">
+    <group Style="pickeach">
+      <table Name="StartingGear_Common" />
+
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+	  <object Blueprint="KF_NyanpireBloodWaterskin" Number="1" />
+      <object Blueprint="KF_SinisterCloak" Number="1" />
+      <object Blueprint="KF_NightDagger" Number="1" />
+      <object Blueprint="KF_DapperClothes" Number="1" />
+	  <object Blueprint="KF_NyanpireTailRibbon" Number="1" />
+      <object Blueprint="Leather Boots" Number="1" />
+      <object Blueprint="Raw Goat Meat" Number="1-3" />
+    </group>
+  </population>  
+
+</populations>

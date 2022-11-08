@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bodies Load="Merge" >
+	<bodyparttypevariants>
+		
+		<bodyparttypevariant VariantOf="Face" Type="Pretty Face" DefaultBehavior="CatgirlBite" />
+		<bodyparttypevariant VariantOf="Head" Type="Head with Fluffy Ears" />
+		<bodyparttypevariant VariantOf="Hand" Type="Sleek Paw" DefaultBehavior="CatgirlClaw" UsuallyOn="Arm" />
+		<bodyparttypevariant VariantOf="Hands" Type="Sleek Paws" />
+		<bodyparttypevariant VariantOf="Feet" Type="Toe Beans" />
+		<bodyparttypevariant VariantOf="Tail" Type="Furry Tail" />
+		
+		<bodyparttypevariant VariantOf="Head" Type="Evil Fluffy Ears" />
+		<bodyparttypevariant VariantOf="Face" Type="Sinister Eyes" DefaultBehavior="NyanpireFangs" />
+		<bodyparttypevariant VariantOf="Back" Type="Evil Back" />
+		<bodyparttypevariant VariantOf="Arm" Type="Evil Arm" />
+		<bodyparttypevariant VariantOf="Hand" Type="Evil Paw" DefaultBehavior="NyanpireClaw" UsuallyOn="Evil Arm" />
+		<bodyparttypevariant VariantOf="Hands" Type="Evil Paws" />
+		<bodyparttypevariant VariantOf="Feet" Type="Evil Toe Beans" />
+		<bodyparttypevariant VariantOf="Tail" Type="Evil Furry Tail" />
+		
+	</bodyparttypevariants>
+	<anatomies>    
+		<anatomy Name="CatgirlAnatomy">
+		  <part Type="Head with Fluffy Ears">
+			<part Type="Pretty Face" />
+		  </part>
+		  <part Type="Back" />
+		  <part Type="Arm" Laterality="Right">
+			<part Type="Sleek Paw" Laterality="Right" SupportsDependent="Hands" />
+		  </part>
+		  <part Type="Arm" Laterality="Left">
+			<part Type="Sleek Paw" Laterality="Left" SupportsDependent="Hands" />
+		  </part>
+		  <part Type="Missile Weapon" Laterality="Right" />
+		  <part Type="Missile Weapon" Laterality="Left" />
+		  <part Type="Sleek Paws" DependsOn="Hands" />
+		  <part Type="Toe Beans" />
+		  <part Type="Furry Tail" />
+		</anatomy>		
+		
+		<anatomy Name="NyanpireAnatomy">
+		  <part Type="Evil Fluffy Ears">
+			<part Type="Sinister Eyes" />
+		  </part>
+		  <part Type="Evil Back" />
+		  <part Type="Evil Arm" Laterality="Right">
+			<part Type="Evil Paw" Laterality="Right" SupportsDependent="Hands" />
+		  </part>
+		  <part Type="Evil Arm" Laterality="Left">
+			<part Type="Evil Paw" Laterality="Left" SupportsDependent="Hands" />
+		  </part>
+		  <part Type="Missile Weapon" Laterality="Right" />
+		  <part Type="Missile Weapon" Laterality="Left" />
+		  <part Type="Evil Paws" DependsOn="Hands" />
+		  <part Type="Evil Toe Beans" />
+		  <part Type="Evil Furry Tail" />
+		</anatomy>		
+		
+	</anatomies>
+</bodies>

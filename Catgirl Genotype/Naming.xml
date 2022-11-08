@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<naming>
+
+  <namestyles>
+        <!--<scope Name="Subtype4" Subtype="Destroyer of Yarn" Priority="100" Combine="false" />-->		
+    <namestyle Name="CatgirlGenotype" TwoNameChance="100">
+      <scopes>
+        <scope Name="Subtype1" Subtype="Scrappy Kitty" Priority="100" Combine="false" />
+        <scope Name="Subtype2" Subtype="Gun Kitten" Priority="100" Combine="false" />
+        <scope Name="Subtype3" Subtype="Claimer of Laps" Priority="100" Combine="false" />
+		<scope Name="Subtype4" Subtype="Swordskitten" Priority="100" Combine="false" />
+        <scope Name="Subtype5" Subtype="Alley Cat" Priority="100" Combine="false" />
+        <scope Name="Subtype6" Subtype="Wiregnawer" Priority="100" Combine="false" />
+        <scope Name="Subtype7" Subtype="Frisbee Kitten" Priority="100" Combine="false" />
+		<scope Name="Subtype8" Subtype="Panther" Priority="100" Combine="false" />
+		<scope Name="Subtype9" Subtype="Nyanpire" Priority="100" Combine="false" />
+        <scope Name="Genotype" Genotype="Catgirl" Priority="100" Combine="false" />
+		<scope Name="Genotype" Genotype="Nyanpire" Priority="100" Combine="false" />
+        <scope Name="Culture" Culture="Catgirl" Priority="100" Combine="true" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="felix" />
+        <prefix Name="felis" />
+        <prefix Name="kat" />
+        <prefix Name="aki" />
+        <prefix Name="alexa" />
+        <prefix Name="ash" />
+        <prefix Name="bast" />
+        <prefix Name="bastet" />
+        <prefix Name="nekomata" />
+        <prefix Name="benju" />
+        <prefix Name="benu" />
+        <prefix Name="ca" />
+        <prefix Name="cale" />
+        <prefix Name="casto" />
+        <prefix Name="cheeky" />
+		<prefix Name="cuti" />
+        <prefix Name="damasca" />
+        <prefix Name="debo" />
+        <prefix Name="dorca" />
+        <prefix Name="eli" />
+        <prefix Name="ephra" />
+        <prefix Name="ephri" />
+        <prefix Name="gabri" />
+		<prefix Name="fluffy" />
+		<prefix Name="fire" />
+        <prefix Name="ha" />
+        <prefix Name="haka" />
+        <prefix Name="hero" />
+        <prefix Name="ho" />
+        <prefix Name="hu" />
+        <prefix Name="icha" />
+        <prefix Name="jedi" />
+        <prefix Name="jeha" />
+        <prefix Name="jeho" />
+        <prefix Name="jodi" />
+        <prefix Name="lazy" />
+		<prefix Name="kuro" />
+        <prefix Name="mittens" />
+        <prefix Name="memphi" />
+		<prefix Name="mimi" />
+        <prefix Name="mao" />
+        <prefix Name="morde" />
+		<prefix Name="nya" />
+        <prefix Name="natha" />
+        <prefix Name="noa" />
+        <prefix Name="ode" />
+        <prefix Name="pretty" />
+        <prefix Name="rache" />
+        <prefix Name="rhea" />
+        <prefix Name="ru" />
+        <prefix Name="snuggle" />
+        <prefix Name="sapha" />
+        <prefix Name="sapho" />
+        <prefix Name="spaz" />
+		<prefix Name="shiro" />
+        <prefix Name="solo" />
+        <prefix Name="stephe" />
+        <prefix Name="sulu" />
+        <prefix Name="tobi" />
+		<prefix Name="quti" />
+		<prefix Name="neko" />
+		<prefix Name="sleek" />
+		<prefix Name="fur" />
+		<prefix Name="lazy" />
+		<prefix Name="shadow" />
+		<prefix Name="fluff" />
+      </prefixes>
+      <postfixes Amount="1">
+		<postfix Name="claw" />
+		<postfix Name="fang" />
+		<postfix Name="ko" />
+		<postfix Name="-chan" />
+		<postfix Name="-sama" />
+		<postfix Name="nya" />
+		<postfix Name="mao" />
+		<postfix Name="neko" />
+		<postfix Name="kitten" />
+		<postfix Name="tail" />
+		<postfix Name="fluff" />
+        <postfix Name="cat" />
+        <!--<postfix Name="diah" />
+        <postfix Name="dias" />
+        <postfix Name="dius" />
+        <postfix Name="ham" />
+        <postfix Name="kenah" />
+        <postfix Name="kunah" />
+        <postfix Name="min" />
+        <postfix Name="mon" />
+        <postfix Name="moth" />
+        <postfix Name="mun" />
+        <postfix Name="muth" />
+        <postfix Name="nae" />
+        <postfix Name="noe" />
+        <postfix Name="nue" />
+        <postfix Name="ny" />
+        <postfix Name="rael" />
+        <postfix Name="rath" />
+        <postfix Name="roth" />
+        <postfix Name="saida" />
+        <postfix Name="saph" />
+        <postfix Name="seph" />
+        <postfix Name="shaphat" />
+        <postfix Name="shar" />
+        <postfix Name="sheba" />
+        <postfix Name="shem" />
+        <postfix Name="shiah" />
+        <postfix Name="shioh" />
+        <postfix Name="shiuh" />
+        <postfix Name="shop" />
+        <postfix Name="siah" />
+        <postfix Name="sioh" />
+        <postfix Name="siuh" />
+        <postfix Name="soph" />
+        <postfix Name="thel" />
+        <postfix Name="thesda" />
+        <postfix Name="tyl" /> -->
+      </postfixes>
+    </namestyle>
+
+  </namestyles>
+
+</naming>

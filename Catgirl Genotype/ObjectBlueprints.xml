@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects>
+    <object Name="PlayableCatgirl" Inherits="Humanoid">
+		<intproperty Name="ChargeRangeModifier" Value="1" />
+		<intproperty Name="JumpRangeModifier" Value="4" />
+		<part Name="Body" Anatomy="CatgirlAnatomy" />
+        <tag Name="Catgirl" />
+    </object>
+	
+	<object Name="PlayableNyanpire" Inherits="Humanoid">
+		<intproperty Name="ChargeRangeModifier" Value="2" />
+		<intproperty Name="JumpRangeModifier" Value="4" />
+		<part Name="CyberneticsHasImplants" Implants="NyacturnalApex@body" />
+		<mutation Name="KF_NyanpireMutation" />
+		<mutation Name="DarkVision" />
+		<mutation Name="Phasing" />
+		<mutation Name="Albino" />
+		<mutation Name="Beguiling" />
+		<mutation Name="Regeneration" />
+		<part Name="Body" Anatomy="NyanpireAnatomy" />
+        <tag Name="Catgirl" />
+    </object>
+	
+  <object Name="KF_NyanpireBloodWaterskin" Inherits="Waterskin">
+    <part Name="LiquidVolume" InitialLiquid="blood-1000" StartVolume="3d6+4" />
+	<tag Name="NoSparkingQuest" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  
+  <object Name="KF_ThiccTome" Inherits="BaseCudgel">
+	<part Name="Render" DisplayName="thicc tome" RenderString="=" Tile="Items/sw_book_1.bmp" TileColor="&amp;g" DetailColor="R" />
+	<part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="2d2" Skill="Cudgel" Stat="Intelligence" />
+	<tag Name="Mods" Value="BookMods,CudgelMods,WeaponMods,ThrownWeaponMods,CommonMods" />
+	<part Name="ThrownWeapon" Damage="2d2" Penetration="2" />
+    <part Name="Commerce" Value="20" />
+    <part Name="Description" Short="A nice thicc book to help you (and others) go to sleep." />
+    <tag Name="Tier" Value="0" />
+    <part Name="Physics" Weight="5" />
+    <tag Name="HitSound" Value="meleeTier0" />
+  </object>
+  
+  <object Name="KF_VogonPoetry" Inherits="BaseCudgel">
+	<part Name="Render" DisplayName="vogon poetry" RenderString="=" Tile="Items/sw_book_2.bmp" TileColor="&amp;m" DetailColor="G" />
+	<part Name="MeleeWeapon" MaxStrengthBonus="800" PenBonus="22" BaseDamage="12d20" Skill="Cudgel" Stat="Intelligence" />
+	<tag Name="Mods" Value="BookMods,CudgelMods,WeaponMods,ThrownWeaponMods,CommonMods" />
+	<part Name="ThrownWeapon" Damage="12d20" Penetration="22" />
+    <part Name="Commerce" Value="0" />
+    <part Name="Description" Short="A book of Vogon poetry, deadly to all." />
+    <tag Name="Tier" Value="8" />
+    <part Name="Physics" Weight="5" />
+    <tag Name="HitSound" Value="meleeTier8" />
+	<tag Name="NoSparkingQuest" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />	
+  </object>  
+
+  <object Name="KF_MagnumRevolver" Inherits="BaseMagazinePistol">
+    <part Name="Render" DisplayName="magnum revolver" Tile="items/sw_revolver.bmp" ColorString="&amp;y" />
+    <part Name="Commerce" Value="250" />
+    <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="6" RangeIncrement="6" />
+    <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileMagnumRevolverShell" AmmoPart="AmmoSlug" MaxAmmo="6" />
+    <part Name="Description" Short="A polished chrome wheel clicks to moon time. Just above a {{pearly|mother-of-pearl}} hand panel, the grip medallion shines in felixian lineage." />
+    <part Name="Metal" />
+	<part Name="TinkerItem" Bits="01234" CanDisassemble="true" CanBuild="true" />
+	<part Name="AddMod" Mods="ModMasterwork" />
+    <tag Name="TurretName" Value="sixgun turret" />
+    <tag Name="Tier" Value="3" />
+    <part Name="Physics" Weight="6" />
+    <tag Name="MissileFireSound" Value="rifle_regularSniper" />
+    <tag Name="ReloadSound" Value="FirearmReload" />
+	<tag Name="NoSparkingQuest" />
+	<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="ProjectileMagnumRevolverShell" Inherits="BaseLeadSlugProjectile">
+    <part Name="Projectile" BasePenetration="8" BaseDamage="1d6+1" />
+  </object>
+
+	<object Name="KF_Frisbee" Inherits="Geomagnetic Disc" >
+		<part Name="Render" DisplayName="{{rainbow|ultimate frisbee}}" RenderString="." Tile="Items/sw_geomagnetic_disc.bmp" DetailColor="m" ColorString="&amp;C" Occluding="false" />
+		<part Name="TinkerItem" Bits="00126" CanDisassemble="false" CanBuild="false" />
+		<part Name="AddMod" Mods="ModJacked" />
+		<tag Name="NoSparkingQuest" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>
+	
+	<object Name="CatgirlClaw" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="skritching claws" RenderString="/" Tile="items/sw_burrowingclaws.bmp" TileColor="&amp;w" DetailColor="W"/>
+		<part Name="MeleeWeapon" MaxStrengthBonus="1000" BaseDamage="1d3" Skill="ShortBlades" Stat="Agility" />
+		<tag Name="BaseObject" Value="*noinherit" />
+	</object>
+  
+	<object Name="CatgirlBite" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="cute muzzle" RenderString="&lt;" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="1000" BaseDamage="1d3+1" Skill="ShortBlades" Stat="Agility" Slot="Face" />
+		<tag Name="BaseObject" Value="*noinherit" />
+	</object>
+	
+	<object Name="NyanpireFangs" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="pointy fangs" RenderString="&lt;" TileColor="&amp;R" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="1000" BaseDamage="1d4+1" Skill="ShortBlades" Stat="Agility" Slot="Face" />
+		<part Name="BleedingOnHit" Amount="1-2" SaveTarget="30" Stack="true" />
+		<tag Name="BaseObject" Value="*noinherit" />
+	</object>
+	
+	<object Name="NyanpireClaw" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="scratching claws" RenderString="/" Tile="items/sw_burrowingclaws.bmp" TileColor="&amp;w" DetailColor="R"/>
+		<part Name="MeleeWeapon" MaxStrengthBonus="1000" BaseDamage="1d3+1" Skill="ShortBlades" Stat="Agility" />
+		<part Name="BleedingOnHit" Amount="1" SaveTarget="25" Stack="true" />
+		<tag Name="BaseObject" Value="*noinherit" />
+	</object>
+	
+	<object Name="KF_TailRibbonBase" Inherits="Armor">
+		<part Name="Render" DisplayName="tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="B" />
+		<part Name="Description" Short="A cute ribbon for the discerning tail accessorizer." />
+		<part Name="Armor" AV="0" DV="0" WornOn="Tail" />
+		<part Name="Physics" Weight="0" Category="Armor" />
+		<property Name="Role" Value="Rare" />
+		<tag Name="BaseObject" Value="*noinherit" />
+	</object>
+	
+	<object Name="KF_TailRibbon" Inherits="KF_TailRibbonBase" >
+		<part Name="Commerce" Value="2" />
+		<tag Name="Tier" Value="0" />
+	</object>
+	
+	<object Name="KF_NyanpireTailRibbon" Inherits="KF_TailRibbonBase" >
+		<part Name="Render" DisplayName="{{K|evil}} tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="K" />
+		<part Name="Description" Short="A cute {{K|evil}} ribbon for the discerning tail accessorizer." />
+		<part Name="Armor" AV="0" DV="1" WornOn="Tail" />
+		<part Name="Commerce" Value="20" />
+		<tag Name="Tier" Value="1" />
+	</object>	
+	
+	<object Name="KF_TailRibbon2" Inherits="KF_TailRibbonBase" >
+		<part Name="Render" DisplayName="{{R|red}} tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="R" />
+		<part Name="Description" Short="A cute {{R|red}} ribbon for the discerning tail accessorizer." />
+		<part Name="Armor" AV="0" DV="1" WornOn="Tail" />
+		<part Name="Commerce" Value="20" />
+		<tag Name="Tier" Value="1" />
+	</object>
+	
+	<object Name="KF_TailRibbon3" Inherits="KF_TailRibbonBase" >
+		<part Name="Render" DisplayName="{{m|purple}} tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="Y" />
+		<part Name="Description" Short="A cute {{m|purple}} ribbon for the royal tail accessorizer." />
+		<part Name="Armor" AV="0" Ego="1" DV="1" WornOn="Tail" />
+		<part Name="Commerce" Value="50" />
+		<tag Name="Tier" Value="2" />
+	</object>
+	
+	<object Name="KF_TailRibbon4" Inherits="KF_TailRibbonBase" >
+		<part Name="Render" DisplayName="{{Y|silver}} tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="m" />
+		<part Name="Description" Short="A cute {{Y|silver}} ribbon for the shiny tail accessorizer." />
+		<part Name="Armor" AV="1" Ego="1" DV="1" WornOn="Tail" />
+		<part Name="Commerce" Value="250" />
+		<tag Name="Tier" Value="4" />
+	</object>		
+	
+	<object Name="KF_MartialTailRibbonBase" Inherits="BaseDagger" >
+		<part Name="Render" DisplayName="{{w|bronze}} tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="w" />
+		<part Name="Description" Short="A cute {{w|bronze}} ribbon for the martial tail accessorizer." />
+		<part Name="Armor" AV="0" DV="1" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" Skill="ShortBlades" Slot="Tail" />
+		<part Name="Examiner" AlternateDisplayName="tail ribbon" />
+		<part Name="Commerce" Value="5" />
+		<tag Name="BaseObject" Value="*noinherit" />
+		<tag Name="Tier" Value="0" />
+		<property Name="Role" Value="Rare" />
+	</object>
+	
+	<object Name="KF_IronTailRibbon" Inherits="KF_MartialTailRibbonBase" >
+		<part Name="Render" DisplayName="{{y|iron}} tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="y" />
+		<part Name="Description" Short="A cute {{y|iron}} ribbon for the martial tail accessorizer." />
+		<part Name="Armor" AV="0" DV="1" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d3" Skill="ShortBlades" Slot="Tail" />
+		<part Name="Commerce" Value="15" />
+		<tag Name="Tier" Value="1" />
+	</object>
+	
+	<object Name="KF_SteelTailRibbon" Inherits="KF_MartialTailRibbonBase" >
+		<part Name="Render" DisplayName="{{Y|steel}} tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="Y" />
+		<part Name="Description" Short="A cute {{Y|steel}} ribbon for the martial tail accessorizer." />
+		<part Name="Armor" AV="0" DV="1" WornOn="Tail" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="1d4" Skill="ShortBlades" />
+		<part Name="Commerce" Value="25" />
+		<tag Name="Tier" Value="2" />
+	</object>	
+	
+	<object Name="KF_CarbideTailRibbon" Inherits="KF_MartialTailRibbonBase" >
+		<part Name="Render" DisplayName="{{b|carbide}} tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="b" />
+		<part Name="Description" Short="A cute {{b|carbide}} ribbon for the martial tail accessorizer." />
+		<part Name="Armor" AV="0" DV="1" WornOn="Tail" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="4" BaseDamage="1d6" Skill="ShortBlades" />
+		<part Name="Commerce" Value="35" />
+		<tag Name="Tier" Value="3" />
+	</object>	
+	
+	<object Name="KF_FoldedCarbideTailRibbon" Inherits="KF_MartialTailRibbonBase" >
+		<part Name="Render" DisplayName="{{B|folded carbide}} tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="B" />
+		<part Name="Description" Short="A cute {{B|folded carbide}} ribbon for the martial tail accessorizer." />
+		<part Name="Armor" AV="0" DV="1" WornOn="Tail" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="1d8" Skill="ShortBlades" />
+		<part Name="Commerce" Value="105" />
+		<tag Name="Tier" Value="4" />
+	</object>	
+	
+	<object Name="KF_FulleriteTailRibbon" Inherits="KF_MartialTailRibbonBase" >
+		<part Name="Render" DisplayName="{{K|fullerite}} tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="&amp;K" />
+		<part Name="Description" Short="A cute {{K|fullerite}} ribbon for the martial tail accessorizer." />
+		<part Name="Armor" AV="0" DV="1" WornOn="Tail" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="6" BaseDamage="1d10" Skill="ShortBlades" />
+		<part Name="Commerce" Value="175" />
+		<tag Name="Tier" Value="5" />
+	</object>
+	
+	<object Name="KF_CrysteelTailRibbon" Inherits="KF_MartialTailRibbonBase" >
+		<part Name="Render" DisplayName="{{crysteel|crysteel}} tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="&amp;g" ColorString="K" />
+		<part Name="Description" Short="A cute {{crysteel|crysteel}} ribbon for the martial tail accessorizer." />
+		<part Name="Armor" AV="0" DV="1" WornOn="Tail" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="7" BaseDamage="1d12" Skill="ShortBlades" />
+		<part Name="Commerce" Value="335" />
+		<part Name="Physics" Weight="2" FlameTemperature="99999" VaporTemperature="9999" />
+		<tag Name="Tier" Value="6" />
+	</object>			
+	
+	<object Name="KF_FlawlessCrysteelTailRibbon" Inherits="KF_MartialTailRibbonBase" >
+		<part Name="Render" DisplayName="{{K|flawless {{crysteel|crysteel}}}} tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="&amp;g" ColorString="K" />
+		<part Name="Description" Short="A cute {{K|flawless {{crysteel|crysteel}}}} ribbon for the martial tail accessorizer." />
+		<part Name="Armor" AV="0" DV="1" WornOn="Tail" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="1d12+1" Skill="ShortBlades" />
+		<part Name="Commerce" Value="715" />
+		<part Name="Physics" Weight="2" FlameTemperature="99999" VaporTemperature="9999" />
+		<tag Name="Tier" Value="7" />
+	</object>
+	
+	<object Name="KF_ZetachromeTailRibbon" Inherits="KF_MartialTailRibbonBase" >
+		<part Name="Render" DisplayName="{{zetachrome|zetachrome}} tail ribbon" RenderString="w" Tile="items/kf_tail_ribbon.png" DetailColor="&amp;m" ColorString="Y" />
+		<part Name="Description" Short="A cute {{zetachrome|zetachrome}} ribbon for the martial tail accessorizer." />
+		<part Name="Armor" AV="0" DV="1" WornOn="Tail" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="9" BaseDamage="1d12+2" Skill="ShortBlades" />
+		<part Name="Commerce" Value="1425" />
+		<part Name="Physics" Weight="2" FlameTemperature="99999" VaporTemperature="9999" />
+		<tag Name="Tier" Value="7" />
+	</object>
+	
+  <object Name="KF_HuntingRifle" Inherits="BaseMagazineRifle">
+    <part Name="Render" DisplayName="Hunting rifle" Tile="Items/sw_rifle.bmp" />
+    <part Name="Physics" Weight="12" UsesTwoSlots="true" />
+    <part Name="Commerce" Value="50" />
+    <part Name="MissileWeapon" Skill="Rifle" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="6" />
+    <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileHuntingRifleShell" AmmoPart="AmmoSlug" MaxAmmo="8" />
+    <part Name="Description" Short="A beat up old hunting rifle, with a scratched oak stock." />
+    <part Name="Metal" />
+    <part Name="TinkerItem" Bits="002" CanDisassemble="true" CanBuild="true" />
+    <tag Name="Tier" Value="3" />
+    <tag Name="DynamicObjectsTable:Guns" />
+    <tag Name="MissileFireSound" Value="rifles_regularSingleShot" />
+  </object>
+  <object Name="ProjectileHuntingRifleShell" Inherits="BaseLeadSlugProjectile">
+    <part Name="Projectile" BasePenetration="6" BaseDamage="1d8+1" />
+  </object>
+  
+	<object Name="KF_CougarRifle" Inherits="KF_HuntingRifle">
+		<part Name="ModScoped" />
+		<tag Name="NoSparkingQuest" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>
+	
+  <object Name="KF_SinisterCloak" Inherits="BaseCloak">
+    <part Name="Armor" AV="0" DV="1" WornOn="Back" />
+    <part Name="Render" DisplayName="sinister cloak" Tile="Items/sw_burnoose.bmp" ColorString="&amp;K" DetailColor="r" RenderString="S" />
+    <part Name="Commerce" Value="12" />
+    <part Name="Description" Short="A long, hooded cloak white-washed from years of exposure to the desert sun." />
+    <part Name="Physics" Weight="1" />
+    <part Name="Springy" Factor="0.9" />
+    <tag Name="Tier" Value="1" />
+    <intproperty Name="Inorganic" Value="0" />
+	<tag Name="NoSparkingQuest" />
+	<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />	
+  </object>
+
+  <object Name="KF_DapperClothes" Inherits="BaseArmor">
+    <part Name="Armor" AV="2" DV="3" WornOn="Body" />
+    <part Name="Render" DisplayName="dapper clothes" RenderString="]" ColorString="&amp;y" DetailColor="y" />
+    <part Name="Commerce" Value="250" />
+    <part Name="Description" Short="These dapper clothes are crafted from the finest materials." />
+    <part Name="Physics" Weight="3" />
+    <part Name="Springy" Factor="0.9" />
+    <tag Name="Tier" Value="3" />
+    <intproperty Name="Inorganic" Value="0" />
+	<tag Name="NoSparkingQuest" />
+	<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />	
+  </object>
+
+  <object Name="KF_NightDagger" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{r|bloody}} kris" Tile="Items/sw_shortblade_9.bmp" ColorString="&amp;K" DetailColor="R" />
+    <part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="1d8" Skill="ShortBlades" Stat="Agility" />
+	<part Name="BleedingOnHit" Amount="1-2" SaveTarget="30" Stack="true" />
+    <part Name="Commerce" Value="400" />
+    <part Name="Description" Short="Volcanic glass was fished from Fuming God Sea and chipped to shape by the nyanpires." />
+    <tag Name="Tier" Value="3" />
+	<tag Name="NoSparkingQuest" />
+  </object>
+  
+  <object Name="NyacturnalApex" Inherits="BaseCyberneticsEquipment_2point">
+    <part Name="Physics" Weight="0" />
+    <part Name="Description" Short="The metabolic rhythms of the (un)Holy City's denizens are synchronized to their diurnal rituals: during the day, repose in prayer beneath the shade of a fluted ziggurat; during the night, prowl the bloody arboreta for sacrifices." />
+    <part Name="Render" DisplayName="{{Y|nyacturnal apex}}" Tile="Items/sw_nocturnal.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="CyberneticsBaseItem" Slots="Body" Cost="2" BehaviorDescription="+10% to natural healing rate during the day.
+Once per night, you can Prowl, gaining +6 agility and +10 movespeed for 100 rounds." />
+    <part Name="CyberneticsNocturnalApex" />
+	<tag Name="StartingCybernetic:Panther" />
+	<tag Name="StartingCybernetic:Alley Cat" />
+	<tag Name="NoSparkingQuest" />
+	<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	<tag Name="Examiner" Value="*delete" />
+  </object>	
+</objects>

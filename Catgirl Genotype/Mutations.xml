@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mutations>
+
+  <category Name="Physical">
+	<mutation Name="Cryo Gas Generation" Cost="3" MaxSelected="1" Class="KF_CryoGasGeneration" BearerDescription="those who expel cryo gas" Tile="Mutations/gas_generation.bmp" />
+	<mutation Name="Plasma Generation" Cost="3" MaxSelected="1" Class="KF_PlasmaGasGeneration" BearerDescription="those who expel plasma" Tile="Mutations/gas_generation.bmp" />
+	<mutation Name="Steam Generation" Cost="3" MaxSelected="1" Class="KF_SteamGasGeneration" BearerDescription="those who expel steam" Tile="Mutations/gas_generation.bmp" />
+  </category>
+  
+</mutations>
